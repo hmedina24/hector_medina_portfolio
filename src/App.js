@@ -1,9 +1,17 @@
 import logo from './logo.svg';
+import Home from './pages/Home';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Resume from './pages/Resume';
+import Contact from './pages/Contact';
+import Navbar from './components/Navbar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 import './App.css';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="min-h-screen bg-gray-50 text-gray-900">
         <Navbar />
         <div className="p-6">
@@ -16,7 +24,7 @@ function App() {
           </Routes>
         </div>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
